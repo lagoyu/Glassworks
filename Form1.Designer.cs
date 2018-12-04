@@ -1,6 +1,6 @@
 ﻿namespace HowMuchGlass
 {
-    partial class Form1
+    partial class GlassForm
     {
         /// <summary>
         /// Required designer variable.
@@ -64,7 +64,7 @@
             0,
             0,
             65536});
-            this.numGlassHeight.ValueChanged += new System.EventHandler(this.NumericUpDown1_ValueChanged);
+            this.numGlassHeight.ValueChanged += new System.EventHandler(this.numGlassHeight_ValueChanged);
             // 
             // numBaseHeight
             // 
@@ -83,7 +83,7 @@
             0,
             0,
             65536});
-            this.numBaseHeight.ValueChanged += new System.EventHandler(this.NumericUpDown3_ValueChanged);
+            this.numBaseHeight.ValueChanged += new System.EventHandler(this.numBaseHeight_ValueChanged);
             // 
             // numDiameter
             // 
@@ -102,7 +102,7 @@
             0,
             0,
             65536});
-            this.numDiameter.ValueChanged += new System.EventHandler(this.NumericUpDown2_ValueChanged);
+            this.numDiameter.ValueChanged += new System.EventHandler(this.numDiameter_ValueChanged);
             // 
             // numGlassThickness
             // 
@@ -121,7 +121,7 @@
             0,
             0,
             131072});
-            this.numGlassThickness.ValueChanged += new System.EventHandler(this.NumericUpDown4_ValueChanged);
+            this.numGlassThickness.ValueChanged += new System.EventHandler(this.numGlassThickness_ValueChanged);
             // 
             // label1
             // 
@@ -215,7 +215,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Name = "Form1";
             this.Text = "How much glass? ";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.Load += new System.EventHandler(this.GlassForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numGlassHeight)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numBaseHeight)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numDiameter)).EndInit();

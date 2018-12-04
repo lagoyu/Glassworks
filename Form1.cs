@@ -2,13 +2,13 @@
 using System.Windows.Forms;
 namespace HowMuchGlass
 {
-    public partial class Form1 : Form
+    public partial class GlassForm : Form
     {
-        public Form1()
+        public GlassForm()
         {
             InitializeComponent();
         }
-        private void Form1_Load(object sender, EventArgs e)
+        private void GlassForm_Load(object sender, EventArgs e)
         {
             UpdateVolumeOutputs();
         }
@@ -20,20 +20,20 @@ namespace HowMuchGlass
             decimal OUT2 = (numGlassHeight.Value - numBaseHeight.Value) * (numDiameter.Value / 2) * (numDiameter.Value / 2) * 3.1416M; labGlassCapacity.Text = OUT2.ToString("F2") + "ml liquid capacity.";
         }
 
-        private void NumericUpDown1_ValueChanged(object sender, EventArgs e)
+        private void numGlassHeight_ValueChanged(object sender, EventArgs e)
         {
 
             UpdateVolumeOutputs();
         }
-        private void NumericUpDown3_ValueChanged(object sender, EventArgs e)
+        private void numBaseHeight_ValueChanged(object sender, EventArgs e)
         {
             UpdateVolumeOutputs();
         }
-        private void NumericUpDown2_ValueChanged(object sender, EventArgs e)
+        private void numDiameter_ValueChanged(object sender, EventArgs e)
         {
             UpdateVolumeOutputs();
         }
-        private void NumericUpDown4_ValueChanged(object sender, EventArgs e)
+        private void numGlassThickness_ValueChanged(object sender, EventArgs e)
         {
             UpdateVolumeOutputs();
         }
