@@ -15,9 +15,9 @@ namespace HowMuchGlass
 
         private void UpdateVolumeOutputs()
         {
-            decimal OUT1 = (NumericUpDown2.Value) * (NumericUpDown2.Value) * 3.1416M * NumericUpDown3.Value + (NumericUpDown1.Value - NumericUpDown3.Value) * 6.2832M * NumericUpDown2.Value * NumericUpDown4.Value;
-            Label6.Text = OUT1.ToString("F2") + "ml of glass needed.";
-            decimal OUT2 = (NumericUpDown1.Value - NumericUpDown3.Value) * (NumericUpDown2.Value / 2) * (NumericUpDown2.Value / 2) * 3.1416M; Label7.Text = OUT2.ToString("F2") + "ml liquid capacity.";
+            decimal OUT1 = (numDiameter.Value) * (numDiameter.Value) * 3.1416M * numBaseHeight.Value + (numGlassHeight.Value - numBaseHeight.Value) * 6.2832M * numDiameter.Value * numGlassThickness.Value;
+            labGlassNeeded.Text = OUT1.ToString("F2") + "ml of glass needed.";
+            decimal OUT2 = (numGlassHeight.Value - numBaseHeight.Value) * (numDiameter.Value / 2) * (numDiameter.Value / 2) * 3.1416M; labGlassCapacity.Text = OUT2.ToString("F2") + "ml liquid capacity.";
         }
 
         private void NumericUpDown1_ValueChanged(object sender, EventArgs e)
