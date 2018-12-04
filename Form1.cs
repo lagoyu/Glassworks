@@ -18,14 +18,16 @@ namespace HowMuchGlass
 
         private void UpdateVolumeOutputs()
         {
-            // There are two errors in this calculation
-            decimal glassNeeded = (numDiameter.Value) * (numDiameter.Value) * PI * numBaseHeight.Value 
-                + (numGlassHeight.Value - numBaseHeight.Value) * 2 * PI * numDiameter.Value * numGlassThickness.Value;
+            decimal radius = numDiameter.Value / 2;
+            decimal tubeHeight = numGlassHeight.Value - numBaseHeight.Value;
             const string TWO_DECIMAL_PLACES = "F2";
+            
+            // Errors fixed to use radius instead of diameter in two places
+            decimal glassNeeded = radius * radius * PI * numBaseHeight.Value 
+                + tubeHeight * 2 * PI * radius * numGlassThickness.Value;
             labGlassNeeded.Text = glassNeeded.ToString(TWO_DECIMAL_PLACES) + "ml of glass needed.";
-            // This calculation appears to be correct
-            decimal liquidCapacity = (numGlassHeight.Value - numBaseHeight.Value) * 
-                (numDiameter.Value / 2) * (numDiameter.Value / 2) * PI;
+
+            decimal liquidCapacity = tubeHeight * radius * radius * PI;
             labGlassCapacity.Text = liquidCapacity.ToString(TWO_DECIMAL_PLACES) + "ml liquid capacity.";
         }
 
