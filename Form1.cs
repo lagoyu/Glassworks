@@ -20,15 +20,15 @@ namespace HowMuchGlass
         {
             decimal glassNeeded = (numDiameter.Value) * (numDiameter.Value) * PI * numBaseHeight.Value 
                 + (numGlassHeight.Value - numBaseHeight.Value) * 2 * PI * numDiameter.Value * numGlassThickness.Value;
-            labGlassNeeded.Text = glassNeeded.ToString("F2") + "ml of glass needed.";
+            const string TWO_DECIMAL_PLACES = "F2";
+            labGlassNeeded.Text = glassNeeded.ToString(TWO_DECIMAL_PLACES) + "ml of glass needed.";
             decimal liquidCapacity = (numGlassHeight.Value - numBaseHeight.Value) * 
                 (numDiameter.Value / 2) * (numDiameter.Value / 2) * PI;
-            labGlassCapacity.Text = liquidCapacity.ToString("F2") + "ml liquid capacity.";
+            labGlassCapacity.Text = liquidCapacity.ToString(TWO_DECIMAL_PLACES) + "ml liquid capacity.";
         }
 
         private void numGlassHeight_ValueChanged(object sender, EventArgs e)
         {
-
             UpdateVolumeOutputs();
         }
         private void numBaseHeight_ValueChanged(object sender, EventArgs e)
