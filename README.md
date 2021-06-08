@@ -1,6 +1,7 @@
 # Glassworks
 Code quality teaching materials
 This is an example of poor quality code. It runs, but the code is of low quality.
+
 Students should consider how to improve:
 * Indentation
 * Avoiding repeated code
