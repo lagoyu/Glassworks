@@ -28,43 +28,43 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.nudGlassHeight = new System.Windows.Forms.NumericUpDown();
+            this.nudTotalHeight = new System.Windows.Forms.NumericUpDown();
             this.nudBaseHeight = new System.Windows.Forms.NumericUpDown();
             this.nudDiameter = new System.Windows.Forms.NumericUpDown();
-            this.nudGlassThickness = new System.Windows.Forms.NumericUpDown();
+            this.nudWallThickness = new System.Windows.Forms.NumericUpDown();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.labVolumeNeeded = new System.Windows.Forms.Label();
+            this.labMaterialVolume = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.labGlassCapacity = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.nudGlassHeight)).BeginInit();
+            this.labLiquidCapacity = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.nudTotalHeight)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudBaseHeight)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudDiameter)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudGlassThickness)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudWallThickness)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // nudGlassHeight
             // 
-            this.nudGlassHeight.DecimalPlaces = 2;
-            this.nudGlassHeight.Increment = new decimal(new int[] {
+            this.nudTotalHeight.DecimalPlaces = 2;
+            this.nudTotalHeight.Increment = new decimal(new int[] {
             1,
             0,
             0,
             65536});
-            this.nudGlassHeight.Location = new System.Drawing.Point(15, 66);
-            this.nudGlassHeight.Name = "nudGlassHeight";
-            this.nudGlassHeight.Size = new System.Drawing.Size(60, 20);
-            this.nudGlassHeight.TabIndex = 0;
-            this.nudGlassHeight.Value = new decimal(new int[] {
+            this.nudTotalHeight.Location = new System.Drawing.Point(15, 66);
+            this.nudTotalHeight.Name = "nudGlassHeight";
+            this.nudTotalHeight.Size = new System.Drawing.Size(60, 20);
+            this.nudTotalHeight.TabIndex = 0;
+            this.nudTotalHeight.Value = new decimal(new int[] {
             115,
             0,
             0,
             65536});
-            this.nudGlassHeight.ValueChanged += new System.EventHandler(this.nudParametersChanged);
+            this.nudTotalHeight.ValueChanged += new System.EventHandler(this.nudParametersChanged);
             // 
             // nudBaseHeight
             // 
@@ -106,22 +106,22 @@
             // 
             // nudGlassThickness
             // 
-            this.nudGlassThickness.DecimalPlaces = 2;
-            this.nudGlassThickness.Increment = new decimal(new int[] {
+            this.nudWallThickness.DecimalPlaces = 2;
+            this.nudWallThickness.Increment = new decimal(new int[] {
             1,
             0,
             0,
             131072});
-            this.nudGlassThickness.Location = new System.Drawing.Point(15, 162);
-            this.nudGlassThickness.Name = "nudGlassThickness";
-            this.nudGlassThickness.Size = new System.Drawing.Size(60, 20);
-            this.nudGlassThickness.TabIndex = 3;
-            this.nudGlassThickness.Value = new decimal(new int[] {
+            this.nudWallThickness.Location = new System.Drawing.Point(15, 162);
+            this.nudWallThickness.Name = "nudGlassThickness";
+            this.nudWallThickness.Size = new System.Drawing.Size(60, 20);
+            this.nudWallThickness.TabIndex = 3;
+            this.nudWallThickness.Value = new decimal(new int[] {
             2,
             0,
             0,
             65536});
-            this.nudGlassThickness.ValueChanged += new System.EventHandler(this.nudParametersChanged);
+            this.nudWallThickness.ValueChanged += new System.EventHandler(this.nudParametersChanged);
             // 
             // label1
             // 
@@ -170,12 +170,12 @@
             // 
             // labVolumeNeeded
             // 
-            this.labVolumeNeeded.AutoSize = true;
-            this.labVolumeNeeded.Location = new System.Drawing.Point(12, 210);
-            this.labVolumeNeeded.Name = "labVolumeNeeded";
-            this.labVolumeNeeded.Size = new System.Drawing.Size(119, 13);
-            this.labVolumeNeeded.TabIndex = 10;
-            this.labVolumeNeeded.Text = "volume of glass needed";
+            this.labMaterialVolume.AutoSize = true;
+            this.labMaterialVolume.Location = new System.Drawing.Point(12, 210);
+            this.labMaterialVolume.Name = "labVolumeNeeded";
+            this.labMaterialVolume.Size = new System.Drawing.Size(119, 13);
+            this.labMaterialVolume.TabIndex = 10;
+            this.labMaterialVolume.Text = "volume of glass needed";
             // 
             // pictureBox1
             // 
@@ -189,37 +189,37 @@
             // 
             // labGlassCapacity
             // 
-            this.labGlassCapacity.AutoSize = true;
-            this.labGlassCapacity.Location = new System.Drawing.Point(12, 234);
-            this.labGlassCapacity.Name = "labGlassCapacity";
-            this.labGlassCapacity.Size = new System.Drawing.Size(96, 13);
-            this.labGlassCapacity.TabIndex = 12;
-            this.labGlassCapacity.Text = "max glass capacity";
+            this.labLiquidCapacity.AutoSize = true;
+            this.labLiquidCapacity.Location = new System.Drawing.Point(12, 234);
+            this.labLiquidCapacity.Name = "labGlassCapacity";
+            this.labLiquidCapacity.Size = new System.Drawing.Size(96, 13);
+            this.labLiquidCapacity.TabIndex = 12;
+            this.labLiquidCapacity.Text = "max glass capacity";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(362, 289);
-            this.Controls.Add(this.labGlassCapacity);
-            this.Controls.Add(this.labVolumeNeeded);
+            this.Controls.Add(this.labLiquidCapacity);
+            this.Controls.Add(this.labMaterialVolume);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.nudGlassThickness);
+            this.Controls.Add(this.nudWallThickness);
             this.Controls.Add(this.nudDiameter);
             this.Controls.Add(this.nudBaseHeight);
-            this.Controls.Add(this.nudGlassHeight);
+            this.Controls.Add(this.nudTotalHeight);
             this.Controls.Add(this.pictureBox1);
             this.Name = "Form1";
             this.Text = "How much glass? ";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.nudGlassHeight)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudTotalHeight)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudBaseHeight)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudDiameter)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudGlassThickness)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudWallThickness)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -228,18 +228,18 @@
 
         #endregion
 
-        private System.Windows.Forms.NumericUpDown nudGlassHeight;
+        private System.Windows.Forms.NumericUpDown nudTotalHeight;
         private System.Windows.Forms.NumericUpDown nudBaseHeight;
         private System.Windows.Forms.NumericUpDown nudDiameter;
-        private System.Windows.Forms.NumericUpDown nudGlassThickness;
+        private System.Windows.Forms.NumericUpDown nudWallThickness;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label labVolumeNeeded;
+        private System.Windows.Forms.Label labMaterialVolume;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label labGlassCapacity;
+        private System.Windows.Forms.Label labLiquidCapacity;
     }
 }
 

@@ -30,17 +30,17 @@ namespace HowMuchGlass
         {
             // Called to update the glass properties when the form is initialised
             // and when inputs are changed by the user
-            glass.Height = nudGlassHeight.Value;
+            glass.TotalHeight = nudTotalHeight.Value;
             glass.BaseHeight = nudBaseHeight.Value;
             glass.OutsideDiameter = nudDiameter.Value;
-            glass.Thickness = nudGlassThickness.Value;
+            glass.WallThickness = nudWallThickness.Value;
         }
 
         private void UpdateOutputsFromGlass(CylindricalGlass glass)
         {
             // Display calculated properties used from the glass object
-            labVolumeNeeded.Text = glass.GlassMaterialVolume.ToString("F2") + "ml of glass needed.";
-            labGlassCapacity.Text = glass.MaxDrinkVolume.ToString("F2") + "ml liquid capacity.";
+            labMaterialVolume.Text = glass.MaterialVolume.ToString("F2") + "ml of glass needed.";
+            labLiquidCapacity.Text = glass.LiquidCapacity.ToString("F2") + "ml liquid capacity.";
         }
     }
 }
