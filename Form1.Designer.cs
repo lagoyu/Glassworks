@@ -55,11 +55,13 @@
             0,
             0,
             65536});
+
             this.nudTotalHeight.Location = new System.Drawing.Point(15, 66);
             this.nudTotalHeight.Name = "nudGlassHeight";
             this.nudTotalHeight.Size = new System.Drawing.Size(60, 20);
             this.nudTotalHeight.TabIndex = 0;
             this.nudTotalHeight.Value = new decimal(new int[] {
+
             115,
             0,
             0,
@@ -93,11 +95,13 @@
             0,
             0,
             65536});
+
             this.nudDiameter.Location = new System.Drawing.Point(15, 130);
             this.nudDiameter.Name = "nudDiameter";
             this.nudDiameter.Size = new System.Drawing.Size(60, 20);
             this.nudDiameter.TabIndex = 2;
             this.nudDiameter.Value = new decimal(new int[] {
+
             54,
             0,
             0,
@@ -112,6 +116,7 @@
             0,
             0,
             131072});
+
             this.nudWallThickness.Location = new System.Drawing.Point(15, 162);
             this.nudWallThickness.Name = "nudGlassThickness";
             this.nudWallThickness.Size = new System.Drawing.Size(60, 20);
@@ -180,9 +185,11 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::HowMuchGlass.Properties.Resources.Tumbler;
+
             this.pictureBox1.Location = new System.Drawing.Point(195, 8);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(166, 272);
+
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 11;
             this.pictureBox1.TabStop = false;
