@@ -28,100 +28,105 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.NumericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.NumericUpDown3 = new System.Windows.Forms.NumericUpDown();
-            this.NumericUpDown2 = new System.Windows.Forms.NumericUpDown();
-            this.NumericUpDown4 = new System.Windows.Forms.NumericUpDown();
+            this.nudTotalHeight = new System.Windows.Forms.NumericUpDown();
+            this.nudBaseHeight = new System.Windows.Forms.NumericUpDown();
+            this.nudDiameter = new System.Windows.Forms.NumericUpDown();
+            this.nudWallThickness = new System.Windows.Forms.NumericUpDown();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.Label6 = new System.Windows.Forms.Label();
+            this.labMaterialVolume = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.Label7 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.NumericUpDown1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.NumericUpDown3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.NumericUpDown2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.NumericUpDown4)).BeginInit();
+            this.labLiquidCapacity = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.nudTotalHeight)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudBaseHeight)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudDiameter)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudWallThickness)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // NumericUpDown1
+            // nudGlassHeight
             // 
-            this.NumericUpDown1.DecimalPlaces = 2;
-            this.NumericUpDown1.Increment = new decimal(new int[] {
+            this.nudTotalHeight.DecimalPlaces = 2;
+            this.nudTotalHeight.Increment = new decimal(new int[] {
             1,
             0,
             0,
             65536});
-            this.NumericUpDown1.Location = new System.Drawing.Point(15, 66);
-            this.NumericUpDown1.Name = "NumericUpDown1";
-            this.NumericUpDown1.Size = new System.Drawing.Size(60, 20);
-            this.NumericUpDown1.TabIndex = 0;
-            this.NumericUpDown1.Value = new decimal(new int[] {
+
+            this.nudTotalHeight.Location = new System.Drawing.Point(15, 66);
+            this.nudTotalHeight.Name = "nudGlassHeight";
+            this.nudTotalHeight.Size = new System.Drawing.Size(60, 20);
+            this.nudTotalHeight.TabIndex = 0;
+            this.nudTotalHeight.Value = new decimal(new int[] {
+
             115,
             0,
             0,
             65536});
-            this.NumericUpDown1.ValueChanged += new System.EventHandler(this.NumericUpDown1_ValueChanged);
+            this.nudTotalHeight.ValueChanged += new System.EventHandler(this.nudParametersChanged);
             // 
-            // NumericUpDown3
+            // nudBaseHeight
             // 
-            this.NumericUpDown3.DecimalPlaces = 2;
-            this.NumericUpDown3.Increment = new decimal(new int[] {
+            this.nudBaseHeight.DecimalPlaces = 2;
+            this.nudBaseHeight.Increment = new decimal(new int[] {
             1,
             0,
             0,
             65536});
-            this.NumericUpDown3.Location = new System.Drawing.Point(15, 98);
-            this.NumericUpDown3.Name = "NumericUpDown3";
-            this.NumericUpDown3.Size = new System.Drawing.Size(60, 20);
-            this.NumericUpDown3.TabIndex = 1;
-            this.NumericUpDown3.Value = new decimal(new int[] {
+            this.nudBaseHeight.Location = new System.Drawing.Point(15, 98);
+            this.nudBaseHeight.Name = "nudBaseHeight";
+            this.nudBaseHeight.Size = new System.Drawing.Size(60, 20);
+            this.nudBaseHeight.TabIndex = 1;
+            this.nudBaseHeight.Value = new decimal(new int[] {
             15,
             0,
             0,
             65536});
-            this.NumericUpDown3.ValueChanged += new System.EventHandler(this.NumericUpDown3_ValueChanged);
+            this.nudBaseHeight.ValueChanged += new System.EventHandler(this.nudParametersChanged);
             // 
-            // NumericUpDown2
+            // nudDiameter
             // 
-            this.NumericUpDown2.DecimalPlaces = 2;
-            this.NumericUpDown2.Increment = new decimal(new int[] {
+            this.nudDiameter.DecimalPlaces = 2;
+            this.nudDiameter.Increment = new decimal(new int[] {
             1,
             0,
             0,
             65536});
-            this.NumericUpDown2.Location = new System.Drawing.Point(15, 130);
-            this.NumericUpDown2.Name = "NumericUpDown2";
-            this.NumericUpDown2.Size = new System.Drawing.Size(60, 20);
-            this.NumericUpDown2.TabIndex = 2;
-            this.NumericUpDown2.Value = new decimal(new int[] {
+
+            this.nudDiameter.Location = new System.Drawing.Point(15, 130);
+            this.nudDiameter.Name = "nudDiameter";
+            this.nudDiameter.Size = new System.Drawing.Size(60, 20);
+            this.nudDiameter.TabIndex = 2;
+            this.nudDiameter.Value = new decimal(new int[] {
+
             54,
             0,
             0,
             65536});
-            this.NumericUpDown2.ValueChanged += new System.EventHandler(this.NumericUpDown2_ValueChanged);
+            this.nudDiameter.ValueChanged += new System.EventHandler(this.nudParametersChanged);
             // 
-            // NumericUpDown4
+            // nudGlassThickness
             // 
-            this.NumericUpDown4.DecimalPlaces = 2;
-            this.NumericUpDown4.Increment = new decimal(new int[] {
+            this.nudWallThickness.DecimalPlaces = 2;
+            this.nudWallThickness.Increment = new decimal(new int[] {
             1,
             0,
             0,
             131072});
-            this.NumericUpDown4.Location = new System.Drawing.Point(15, 162);
-            this.NumericUpDown4.Name = "NumericUpDown4";
-            this.NumericUpDown4.Size = new System.Drawing.Size(60, 20);
-            this.NumericUpDown4.TabIndex = 3;
-            this.NumericUpDown4.Value = new decimal(new int[] {
-            20,
+
+            this.nudWallThickness.Location = new System.Drawing.Point(15, 162);
+            this.nudWallThickness.Name = "nudGlassThickness";
+            this.nudWallThickness.Size = new System.Drawing.Size(60, 20);
+            this.nudWallThickness.TabIndex = 3;
+            this.nudWallThickness.Value = new decimal(new int[] {
+            2,
             0,
             0,
-            131072});
-            this.NumericUpDown4.ValueChanged += new System.EventHandler(this.NumericUpDown4_ValueChanged);
+            65536});
+            this.nudWallThickness.ValueChanged += new System.EventHandler(this.nudParametersChanged);
             // 
             // label1
             // 
@@ -168,58 +173,60 @@
             this.label5.TabIndex = 8;
             this.label5.Text = "Enter values in cm";
             // 
-            // Label6
+            // labVolumeNeeded
             // 
-            this.Label6.AutoSize = true;
-            this.Label6.Location = new System.Drawing.Point(12, 210);
-            this.Label6.Name = "Label6";
-            this.Label6.Size = new System.Drawing.Size(119, 13);
-            this.Label6.TabIndex = 10;
-            this.Label6.Text = "volume of glass needed";
+            this.labMaterialVolume.AutoSize = true;
+            this.labMaterialVolume.Location = new System.Drawing.Point(12, 210);
+            this.labMaterialVolume.Name = "labVolumeNeeded";
+            this.labMaterialVolume.Size = new System.Drawing.Size(119, 13);
+            this.labMaterialVolume.TabIndex = 10;
+            this.labMaterialVolume.Text = "volume of glass needed";
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::HowMuchGlass.Properties.Resources.Tumbler;
-            this.pictureBox1.Location = new System.Drawing.Point(194, 8);
+
+            this.pictureBox1.Location = new System.Drawing.Point(195, 8);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(167, 272);
+            this.pictureBox1.Size = new System.Drawing.Size(166, 272);
+
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 11;
             this.pictureBox1.TabStop = false;
             // 
-            // Label7
+            // labGlassCapacity
             // 
-            this.Label7.AutoSize = true;
-            this.Label7.Location = new System.Drawing.Point(12, 234);
-            this.Label7.Name = "Label7";
-            this.Label7.Size = new System.Drawing.Size(96, 13);
-            this.Label7.TabIndex = 12;
-            this.Label7.Text = "max glass capacity";
+            this.labLiquidCapacity.AutoSize = true;
+            this.labLiquidCapacity.Location = new System.Drawing.Point(12, 234);
+            this.labLiquidCapacity.Name = "labGlassCapacity";
+            this.labLiquidCapacity.Size = new System.Drawing.Size(96, 13);
+            this.labLiquidCapacity.TabIndex = 12;
+            this.labLiquidCapacity.Text = "max glass capacity";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(362, 289);
-            this.Controls.Add(this.Label7);
-            this.Controls.Add(this.Label6);
+            this.Controls.Add(this.labLiquidCapacity);
+            this.Controls.Add(this.labMaterialVolume);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.NumericUpDown4);
-            this.Controls.Add(this.NumericUpDown2);
-            this.Controls.Add(this.NumericUpDown3);
-            this.Controls.Add(this.NumericUpDown1);
+            this.Controls.Add(this.nudWallThickness);
+            this.Controls.Add(this.nudDiameter);
+            this.Controls.Add(this.nudBaseHeight);
+            this.Controls.Add(this.nudTotalHeight);
             this.Controls.Add(this.pictureBox1);
             this.Name = "Form1";
             this.Text = "How much glass? ";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.NumericUpDown1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.NumericUpDown3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.NumericUpDown2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.NumericUpDown4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudTotalHeight)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudBaseHeight)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudDiameter)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudWallThickness)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -228,18 +235,18 @@
 
         #endregion
 
-        private System.Windows.Forms.NumericUpDown NumericUpDown1;
-        private System.Windows.Forms.NumericUpDown NumericUpDown3;
-        private System.Windows.Forms.NumericUpDown NumericUpDown2;
-        private System.Windows.Forms.NumericUpDown NumericUpDown4;
+        private System.Windows.Forms.NumericUpDown nudTotalHeight;
+        private System.Windows.Forms.NumericUpDown nudBaseHeight;
+        private System.Windows.Forms.NumericUpDown nudDiameter;
+        private System.Windows.Forms.NumericUpDown nudWallThickness;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label Label6;
+        private System.Windows.Forms.Label labMaterialVolume;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label Label7;
+        private System.Windows.Forms.Label labLiquidCapacity;
     }
 }
 
